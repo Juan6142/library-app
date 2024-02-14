@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles..css">
+</head>
+<body>
+    <div class="header">
+        <h1>Library App</h1>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">About us</a>
+        <button class="log-in" type="button">Log in</button>
+    </div>
+    <div class="main">
+        <button class="add">Add book</button>
+    </div>
+    <div class="book-container" id="bookContainer">
+        
+    </div>
+    <dialog id="addBookDialog">
+        <form method="dialog" id="bookForm">
+            <label>Title<input type="text" name="title" id="title" required></label>
+            <label for="author">Author<input type="text" name="author" id="author" required></label>
+            <label for="pages">Pages<input type="number" name="pages" id="pages" required></label>
+            <label for="readed" class="label-readed">Have you readed?<input type="checkbox" name="readed" id="readed"></label>
+            <div class="buttons">
+                <button type="submit" class="submit">Confirm</button>
+                <button type="button" class="cancel">Cancel</button>      
+            </div>
+
+
+          </div>
+        </form>
+      </dialog>
+    <div class="footer">Copyright © 2024 The Odin Proyect</div>
+    <script src="script.js"></script>
+</body>
+</html>
