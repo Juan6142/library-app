@@ -17,14 +17,17 @@ let pagesValue = ""
 let readedValue = ""
 let bookobj = {}
 
-function Book(title, author, pages, read) {
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.read = read
-    this.info = function() {
-        console.log(`${title} by ${author}, ${pages}, ${read}`);
-    }   
+class Book {
+    constructor(title, author, pages, read) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read
+        this.info = function() {
+            console.log(`${title} by ${author}, ${pages}, ${read}`);
+        }  
+    }
+    
 }
 
 /* input checked*/ 
